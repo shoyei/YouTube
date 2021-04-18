@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: #181818;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Helvetica, sans-serif;
+}
+
+/* ----- HEADER ----- */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    vertical-align: center;
+    z-index: 99;
+}
+
+.navSpacer {
+    height: 56px;
+    width: 100%;
+}
+
+/* Left Buttons (Menu/Logo) */
+
+.hamLogoCont {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 185px;
+    margin-left: 20px;
+}
+
+#hamburger {
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 8px;
+}
+
+.hamLogoCont img{
+    height: 20px;
+}
+
+/* Search Bar */
+
+.searchContainer {
+    display: flex;
+    justify-self: center;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 47%;
+    height: 40px;
+}
+
+.searchContainer input {
+    width: 100%;
+    height: 32px;
+    line-height: 24px;
+    background-color: #121212;
+    color:#707070;
+    border: 1px solid #3d3d3d;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    padding-left: 10px;
+    font-size: 15px;
+    vertical-align: center;
+}
+
+#magnifyingGlass {
+    min-width: 65px;
+    background-color:#3d3d3d;;
+    border: none;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+#magnifyingGlass:hover {
+    cursor: pointer;
+    min-width: 65px;
+    background-color: #313131;
+    border: 1px solid #5a5a5a;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+#magGlassImg {
+    height: 17px;
+    margin: 5px;
+}
+
+#mic {
+    margin-left: 15px;
+    height: 20px;
+}
+
+/* Right Buttons (User Features) */
+
+.accountButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.accountButtons img {
+    height: 20px;
+}
+
+#signIn {
+    height: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 105px;
+    border: 1px solid #3da6ff;
+    border-radius: 2px;
+    color:#3da6ff;
+    font-size: 14px;
+    padding:5px;
+    margin-right: 10px;
+}
+
+#signIn img {
+    height: 24px;
+}
+
+/* ----- MAIN CONTAINER ----- */
+
+.mainContainer {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    padding: 24px;
+    /* margin: 0px 30px; */
+}
+
+/* ----- VIDEO & COMMENTS CONTAINER ----- */
+
+.vidCommentContainer {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.video {
+    width: 100%;
+}
+
+.vidContainer {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.primaryInfo {
+    padding: 20px 0px 8px;
+    border-bottom: .5px solid #3d3d3d;
+}
+
+.primaryInfo h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #909090;
+    margin: 0;
+}
+
+#socialButtons {
+    max-width: 376px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+
+.likes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.likes img {
+    height: 24px;
+    margin-right: 10px;
+}
+
+#dots p{
+    font-size: 30px;
+    vertical-align: text-top;
+}
+
+/* ----- CHANNEL ----- */
+
+#channel {
+    display: flex;
+    margin-top: 24px;
+    border-bottom: .5px solid #3d3d3d;
+    padding-bottom: 20px;
+}
+
+#channel img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50px;
+    margin-right: 14px;
+}
+
+#channelName {
+    width: 100%;
+}
+
+#channelName h5 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#channelName p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 13px;
+    color:#909090;
+}
+
+#subscribe {
+    background-color: rgb(212, 2, 2);
+    border: none;
+    border-radius: 2px;
+    padding: 9px 16px;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* ----- COMMENTS ----- */
+
+#comments {
+    width: 100%;
+}
+
+#commentsHeader {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#commentCount {
+    margin-right: 32px;
+}
+
+#commentsHeader img {
+    height: 20px;
+    margin-right:16px;
+}
+
+#sortBy {
+    color: #909090;
+    font-size: 14px;
+}
+
+#leaveComment {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#leaveComment img {
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
+}
+
+#leaveComment input {
+    width: 100%;
+    border: none;
+    height: 26px;
+    background-color: #181818;
+    color: #909090;
+    border-bottom: .5px solid #3d3d3d;
+    font-size: 14px;
+}
+
+.comment {
+    display: flex;
+    margin-top: 20px;
+}
+
+.profilePic {
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
+}
+
+.commentText {
+    font-size: 14px;
+}
+
+.commentDate{
+    color: #909090;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.nameDate {
+    display: flex;
+}
+
+.nameDate p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 5px;
+}
+
+.commentContent {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.commentLikes {
+    display: flex;
+    align-items: center;
+}
+
+.commentLikes > * {
+    margin-right: 10px;
+    color: #909090;
+}
+
+.commentLikes img {
+    display: flex;
+    height: 16px;
+    width: 16px;
+}
+
+
+/* ----- SUGGESTED VIDEOS ----- */
+
+.suggested {
+    width: 30%;
+    max-width: 400px;
+}
+
+.suggestedVideo {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.videoImg {
+    width:168px;
+    height: 94px;
+    margin-right: 10px;
+}
+
+.suggestedVidText > * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #909090;
+    font-size: 13px;
+}
+
+.suggestTitle {
+    font-size: 14px;
+    color: white;
+}
